@@ -99,6 +99,14 @@ blockquote::after, blockquote::before {
     font-weight: 600;
 }
 
+.cta-text h3 {
+    color: var(--header-heading-color)
+}
+
+.cta-text p {
+    color: var(--header-text-color);
+}
+
 /*** header ***/
 .header {
     background-color: var(--primary-color);
@@ -154,7 +162,7 @@ blockquote::after, blockquote::before {
 
 /*** main ***/
 .main {
-    padding: 2rem 0;
+    padding-top: 2rem;
 }
 
 /** secret-sauce section **/
@@ -202,6 +210,25 @@ blockquote::after {
 .quote figcaption {
     text-align: right;
     margin-top: 1rem;
+}
+
+/** call-to-action **/
+
+.call-to-action {
+    background-color: var(--secondary-color);
+    margin: 4rem 0;
+    padding: 2rem 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+}
+
+.cta-sign-up {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 0.25em 1.25em
 }
 
 /*** footer ***/
