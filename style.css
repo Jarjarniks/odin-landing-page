@@ -107,6 +107,12 @@ blockquote::after, blockquote::before {
     color: var(--header-text-color);
 }
 
+/** footer **/
+
+.copyright p {
+    text-align: center;
+}
+
 /*** header ***/
 .header {
     background-color: var(--primary-color);
@@ -233,3 +239,8 @@ blockquote::after {
 
 /*** footer ***/
 
+.copyright {
+    background-color: var(--primary-color);
+    color: var(--header-text-color);
+    padding: 2rem 0;
+}
