@@ -29,6 +29,12 @@ a:hover {
     margin: 0 auto;
 }
 
+.container-60 {
+    width: 60%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 img {
     width: 100%;
 }
@@ -78,6 +84,19 @@ body {
     text-align: center;
     font-size: 36px;
     font-weight: 900;
+}
+
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+}
+
+blockquote::after, blockquote::before {
+    font-size: 36px;
+}
+
+.quote figcaption {
+    font-weight: 600;
 }
 
 /*** header ***/
@@ -140,6 +159,10 @@ body {
 
 /** secret-sauce section **/
 
+.secret-sauce {
+    padding-bottom: 3rem;
+}
+
 .card-container {
     display:flex;
 }
@@ -160,11 +183,11 @@ body {
 
 .quote {
     background-color: var(--quote-bg-color);
+    padding: 4rem 0;
 }
 
-.quote p {
-    font-size: 36px;
-    font-style: italic;
+.quote blockquote {
+    display: flex;
 }
 
 blockquote::before {
@@ -173,8 +196,13 @@ blockquote::before {
 
 blockquote::after {
     content: close-quote;
+    align-self: flex-end;
 }
 
-
+.quote figcaption {
+    text-align: right;
+    margin-top: 1rem;
+}
 
 /*** footer ***/
+
