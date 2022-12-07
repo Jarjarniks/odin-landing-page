@@ -112,5 +112,22 @@ img {
 }
 
 /*** main ***/
+.main {
+    padding: 2rem 0;
+}
+
+.secret-sauce h2 {
+    text-align: center;
+}
+
+.card-container {
+    display:flex;
+}
+
+.section-card {
+    flex:1;
+    margin: 2rem 1rem;
+    text-align: center;
+}
 
 /*** footer ***/
