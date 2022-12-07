@@ -29,32 +29,38 @@ img {
 
 /*** color variables ***/
 :root {
-    --primary-color:
+    --primary-color: #1f2937;
+    --secondary-color: #3882f6;
+    --logo-text-color: #f9faf8;
+    --header-heading-color: #f9faf8;
+    --header-text-color: #e5e7eb;
+    --sign-up-color: #3882f6;
+    --quote-bg-color: #e5e7eb;
+    --quote-text-color: #1f2937;
 }
 
 /*** typography ***/
 .header-logo-text {
     font-size: 24px;
-    color: #f9faf8;
+    color: var(--logo-text-color);
 }
 
 .hero-text h1 {
     font-size: 48px;
     font-weight: bold;
-    color: #f9faf8;
+    color: var(--header-heading-color);
     line-height: 0.8;
     margin-bottom: 1rem;
 }
 
 .hero-text p, .navbar a {
     font-size: 18px;
-    color: #e5e7eb;
+    color: var(--header-text-color);
 }
 
 /*** header ***/
 .header {
-    background-color: #1f2937;
-    color: #fff;
+    background-color: var(--primary-color);
 }
 
 .navbar-flex {
@@ -75,8 +81,8 @@ img {
 }
 
 .navbar a:hover {
-    background-color: #e5e7eb;
-    color: #1f2937;
+    background-color: var(--header-text-color);
+    color: var(--primary-color);
     border-radius: 100px;
 }
 
@@ -91,12 +97,18 @@ img {
     flex: 1;
 }
 
-.sign-up {
-    background-color: #3882f6;
+.hero-text p {
+    margin-bottom: 1rem;
 }
 
 .hero-img {
     flex: 1;
+}
+
+.sign-up {
+    background-color: var(--sign-up-color);
+    padding: 0.5em 1.75em;
+    border-radius: 5px;
 }
 
 /*** main ***/
